@@ -1,0 +1,202 @@
+/*  Mini Reset  */
+
+/* 
+# (Seletor por ID)
+div (Seletor por nome de tag)
+. (seletor por classe)
+*/
+
+
+/* regras para usar o CSS
+ 
+tamanhos
+posições
+espaçamentos
+Display - exibição
+*/
+
+/* Seletor geral */
+*{
+    margin: 0; /* Espaçamento entre os Elementos */
+    padding: 0; /* Espaçamento de dentro dos Elementos */
+    border: 0; /* Colocar borda em volta do elemento */
+    box-sizing: border-box; /* Utiliza espaço interno e mantem tamanho de width e height (Vertical e Horizontal) */
+
+}
+
+body{
+    width: 100vw;
+    display: flex; /* permite mudar a direção */
+    flex-direction: column; /* alinhamos na horizontal */
+    justify-content: center; /* alinha sempre na direção do flex  */
+    align-items: center; 
+}
+
+.area-header{
+    height: 100px; 
+    width: 100%;
+    display: flex; /* ficar um do lado do outro - FLEX me permite o deixar de forma mais abrangente */
+    padding-left: 4rem;
+    /* REM = Unidade de medida */
+    padding-right: 4rem; 
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 6px -6px #222;
+    
+}
+
+.area-logo{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-logo-img{
+    height: 50px;
+    width: 50px;
+}
+
+.area-nav{
+    height: 100%;
+    flex: 1;
+    
+}
+
+.nav-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none; /* tira as bolinhas da lista */
+    gap: 10px; /* usado para dar espaço entre os elementos */
+}
+
+.nav-list-item{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+
+}
+.nav-list-item:hover{
+    color: #008248;
+    cursor: pointer;
+}
+
+
+.area-nav-history{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-history{
+
+    height: 100%;
+    width: 120px;
+}
+.nav-history-img{
+    width: 100px;
+}
+
+.nav-store-location{
+    width: 160px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content{
+    /* width: 1440; */
+    /* width: 75% */
+    width: 75vw;    
+    
+}
+
+.banner-area{
+    /* Para colocar uma imagem de fundo usarmos o Background e usamos dois pontos para voltar uma pasta*/
+    background-image: url('../images/banner01.jpg');
+    height: 428px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.banner-text-area{
+    height:  100%;
+    width: 60%;
+    padding: 32px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 45px;
+    
+}
+
+/* Desenhando o Banner com seu tamanhos */
+.banner-text-left{
+    width: 100%;
+    height: 428px;
+    border: 2px solid firebrick;
+    margin-top: 30px;
+    display: flex;
+}
+
+/*Lado direito */
+
+/* texto do lado esquedo */
+.banner-text{
+    /* Definimos uma cor para verificar o espaço ocupado */
+    background-color: D4E9E2;
+    /* Ocupa 50% do espaço */
+    width: 50%;
+    /* para eu poder modificar de forma livre */
+    display: flex;
+    /* Deixa eles em coluna (Um em baixo do outro) */
+    flex-direction: column;
+    /* alinha o itens (Elemetos) no meio */
+    align-items: center;
+    /* Aqui ele vai dar o espaço de cima colocando ele no meio */
+    justify-content: center;
+    /* Da espaço entre os itens */
+    gap: 32px;
+}
+
+.banner-btn-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.banner-btn-area a{
+    padding: 12px 18px;
+    border: 2px solid #1e3932;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.banner-imag-area-right{
+    width: 50%;
+    
+}
+
+.banner-imag-area-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
